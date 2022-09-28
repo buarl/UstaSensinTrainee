@@ -3,13 +3,10 @@ import {ListGroup, ListGroupItem} from 'reactstrap';
 
 export default class CategoryList extends Component {
     state = {categories: [{categoryID:1, categoryName:"El Aletleri"},
-                          {categoryID:2, categoryName:"Elektronik"}],
+                          {categoryID:2, categoryName:"Elektronik"}]
 
-      currentCategory:""
   };
-  changeCategory = (category)=>{
-    this.setState({currentCategory:category.categoryName});
-  };
+  
     render() {
         return (
             <div>
@@ -17,7 +14,7 @@ export default class CategoryList extends Component {
                 <ListGroup>
                     {
                         this.state.categories.map(category=>( /*map = döngü fonksiyonu*/
-                            <ListGroupItem onClick = {()=>this.changeCategory(category)} 
+                            <ListGroupItem onClick = {()=>this.props.changeCategory(category)} 
                                                      key= {category.categoryID}> {category.categoryName} 
                             </ListGroupItem>
                         ))
@@ -26,7 +23,7 @@ export default class CategoryList extends Component {
                   <ListGroupItem> El Aletleri </ListGroupItem>
                   <ListGroupItem> Hirdavat </ListGroupItem>
                 </ListGroup>
-                <h4>{this.state.currentCategory}</h4>
+                <h4>{this.props.currentCategory}</h4>
             </div>
         );
     }
