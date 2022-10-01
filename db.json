@@ -1,0 +1,81 @@
+
+ { "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "ScrewDriver",
+      "unitPrice": "24",
+      "unitsInStock": 53
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "productName": "Control Pen",
+      "unitPrice": "21",
+      "unitsInStock": 17
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "productName": "Pliers",
+      "unitPrice": "222",
+      "unitsInStock": 53
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "productName": "Chisel Pliers",
+      "unitPrice": "21",
+      "unitsInStock": 15
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "productName": "Screws 3x16",
+      "unitPrice": 0.1,
+      "unitsInStock": 1200
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "productName": "Screws 4x16",
+      "unitPrice": 0.15,
+      "unitsInStock": 1000
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "productName": "Screws 3x30",
+      "unitPrice": 0.2,
+      "unitsInStock": 1000
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "productName": "Screws 4x50",
+      "unitPrice": 0.25,
+      "unitsInStock": 500
+    },
+    {
+      "id": 10,
+      "categoryId": 8,
+      "productName": "Screws 6x50",
+      "unitPrice": 0.4,
+      "unitsInStock": 200}
+    ],
+
+    "categories": [
+      {
+        "id": 1,
+        "categoryName": "Hand Tools",
+        "seoUrl": "hand-tools"
+      },
+      {
+        "id": 2,
+        "categoryName": "Screws",
+        "seoUrl": "screws"
+      }
+       ]
+
+    }
+    
